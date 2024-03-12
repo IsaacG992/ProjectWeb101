@@ -1,0 +1,401 @@
+/* KEYFRAMES */
+@keyframes wheelRight{
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(62vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes winText{
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(34vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+
+}
+
+
+
+
+/* --------GENERAL CSS---------- */
+
+body{
+    background-color: slategray;
+}
+
+.navContainer {
+    border: solid black;
+    height: 16vh;
+    border-width: 2px;
+    margin: .1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    background-color: seashell;
+}
+
+.logo {
+    /* width: 20%; */
+    height: 80%;
+}
+
+.navBar {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.credentials {
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.credentials button {
+    border: solid maroon;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.credentials button:hover {
+    border: solid maroon;
+    background-color: white;
+    color: black;
+}
+
+
+
+.topContainer {
+    border: solid black;
+    border-radius: 15px;
+    height: 100vh;
+    border-width: 2px;
+    margin: 1em;
+    display: flex;
+    object-fit: cover;
+    overflow: hidden;
+    background-color: black;
+}
+
+.pic1 {
+opacity: 30%;
+ width: 100%;
+ height: 100%;
+}
+
+.textoverlay {
+    position: absolute;
+    top: 80%; /* Adjust as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color */
+    text-align: center;
+    font-size: 40px; /* Adjust font size */
+    font-weight: bold;
+    word-spacing: 15pxpx;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.bottomContainer {
+    border: solid black;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 50vh;
+    width: 100%;
+    border-width: 2px;
+    margin-top: 1em;
+    display: flex;
+    object-fit: cover;
+    align-self: center;
+    background-color: black;
+}
+
+.gif1 {
+    height: 100%;
+    width: 100%;
+    opacity: 45%;
+}
+
+.textoverlay2 {
+    position: absolute;
+    top: 145%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, 50%);
+    color: white; /* Adjust text color */
+    text-align: center;
+    font-size: 30px; /* Adjust font size */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wheel-O {
+    /* border: solid red; */
+    width: 100%;
+    align-content: center;
+    height: 10vh;
+    display: flex;
+}
+
+.aniPic {
+    height: 100%;
+    animation: wheelRight 8s ease-in-out infinite;
+}
+
+.saleText {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+    align-self: center;
+    animation: wheelRight 8s ease-in-out infinite;
+    color: aqua;
+}
+
+.clickLogo {
+    height: 100%;
+    align-self: center;
+}
+
+.loginContainer {
+    border: solid black;
+    margin: 5em;
+    height: 100vh;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.backPic {
+    width: 100%;
+    display: block;
+}
+
+.loginBox {
+position: absolute;
+border: solid white;
+border-radius: 30px;
+background-color: rgba(255, 255, 255, 0.575);
+margin: 1em;
+height: 80vh;
+width: 33%;
+align-self: center;
+display: block;
+justify-content: center;
+}
+
+h1 {
+text-align: center;
+}
+
+.input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px;
+}
+
+.input-box input {
+    width: 80%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid cyan;
+    border-radius: 40px;
+    font-size: 14px;
+}
+
+.input-box input::placeholder {
+    color: black;
+}
+
+.input-box i {
+    position: absolute;
+    right: 80px;
+    transform: translateY(100%);
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+}
+
+.btn {
+    width: 60%;
+    height: 45px;
+    background-color: cyan;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+.register-link{
+text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#infoBtn:hover {
+    color: gray;
+    text-shadow: 0px 0px 25px darkred;
+}
+
+.infoContainer {
+display: flex;
+justify-content: space-around;
+}
+
+.giveaway {
+    border: solid white;
+    margin: 1em;
+    width: 60%;
+    height: 75vh;
+}
+
+.winnerPic {
+    width: 100%;
+    height: 100%;
+}
+
+.winnerText {
+    border: solid white;
+    position: absolute;
+    font-size: 30px;
+    background-color: white;
+    transform: translateY(-100px);
+}
+
+.winnerText2 {
+    position: absolute;
+    padding: 5px;
+    background-color: black;
+    color: cyan;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation: winText 6s ease-in-out infinite;
+    top: 91%;
+}
+
+.winnerText2:hover {
+color: maroon;
+cursor: pointer;
+}
+
+
+
+
+table {
+    width: 80%;
+    height: 75vh;
+    margin: 1em;
+    background-color: white;
+  }
+
+  th, td {
+    border: 1px solid maroon;
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: maroon;
+  }
+
+.winnerForm {
+border: solid maroon;
+background-color: white;
+border-radius: 10px;
+width: 100%;
+height: 70vh;
+display: block;
+}
+
+.formInfo {
+    display: flex;
+    margin: 1em;
+    justify-content: space-between;
+    align-self: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.formInfo input {
+    height: 30px;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.terms {
+    margin: 1em;
+}
+
+.submitBtn {
+    margin-left: 45vw;
+}
+
+.submitBtn input {
+    border: solid green;
+    background-color: lime;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.submitBtn input:hover {
+    background-color: white;
+    color: lime;
+}
+
+.dropdown {
+    transform: translateY(80px);
+}
+
+
+.dropdown li {
+    position: relative;
+    list-style: none;
+    padding: 10px;
+    background-color: maroon;
+    font-size: 15px;
+    display: none;
+}
+
+.navGuide:hover .dropdown li {
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: white;
+    border:solid black;
+}
